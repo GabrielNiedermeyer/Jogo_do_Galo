@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="MainActivity">
+
+    <ImageView
+        android:id="@+id/top"
+        android:background="#FF03DAC5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/center"
+        android:layout_marginBottom="54dp"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        />
+
+    <ImageView
+        android:id="@+id/topStart"
+        android:background="#FF03DAC5"
+        app:layout_constraintStart_toStartOf="@id/centerStart"
+        app:layout_constraintBottom_toTopOf="@id/centerStart"
+        android:layout_marginBottom="54dp"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        />
+
+    <ImageView
+        android:id="@+id/topEnd"
+        android:background="#FF03DAC5"
+        app:layout_constraintEnd_toEndOf="@id/centerEnd"
+        app:layout_constraintBottom_toTopOf="@id/centerEnd"
+        android:layout_marginBottom="54dp"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        />
+
+    <ImageView
+        android:id="@+id/center"
+        android:background="#FF03DAC5"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        />
+
+    <ImageView
+        android:id="@+id/centerEnd"
+        android:background="#FF03DAC5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/center"
+        android:layout_marginStart="54dp"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        />
+    <ImageView
+        android:id="@+id/centerStart"
+        android:background="#FF03DAC5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/center"
+        android:layout_marginEnd="54dp"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        />
+    <ImageView
+        android:id="@+id/bottom"
+        android:background="#FF03DAC5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/center"
+        android:layout_marginTop="54dp"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        />
+
+    <ImageView
+        android:id="@+id/bottomStart"
+        android:background="#FF03DAC5"
+        app:layout_constraintStart_toStartOf="@id/centerStart"
+        app:layout_constraintTop_toBottomOf="@id/centerStart"
+        android:layout_marginTop="54dp"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        />
+
+    <ImageView
+        android:id="@+id/bottomEnd"
+        android:background="#FF03DAC5"
+        app:layout_constraintEnd_toEndOf="@id/centerEnd"
+        app:layout_constraintTop_toBottomOf="@id/centerEnd"
+        android:layout_marginTop="54dp"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        />
+
+<Button
+    android:id="@+id/botomReset"
+    android:text="RESETAR"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    android:layout_marginBottom="54dp"
+
+    />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
